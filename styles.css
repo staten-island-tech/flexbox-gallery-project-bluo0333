@@ -14,10 +14,12 @@ body,
   flex-direction: row;
 }
 h2 {
+  font-family: "Montserrat", sans-serif;
   background-color: f2cc8f;
   color: rgb(2, 84, 109);
 }
 p {
+  font-family: "Montserrat", sans-serif;
   margin-top: 2rem;
   font-size: 2.5rem;
   background-color: f2cc8f;
@@ -35,4 +37,10 @@ p {
   border-radius: 15px;
   height: 50rem;
   padding-top: 30px;
+  box-shadow: 1rem 1rem 5rem rgb(148, 1, 141);
+}
+#child-1 {
+  background-image: url(img/cucumbers.jpg);
+  background-repeat: no-repeat;
+  background-size: ;
 }
