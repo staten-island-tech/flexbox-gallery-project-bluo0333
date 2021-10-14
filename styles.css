@@ -75,3 +75,8 @@ p {
 #child-9 {
   background-image: url(img/celery.jpg);
 }
+.child:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
