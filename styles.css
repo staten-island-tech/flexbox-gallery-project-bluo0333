@@ -5,8 +5,9 @@ body,
   margin: 0%;
   box-sizing: border-box;
   font-size: 62.5%;
+  gap: 4rem;
 }
-.parent {
+.gallery {
   background-color: f4f1de;
   justify-content: space-evenly;
   display: flex;
@@ -33,7 +34,7 @@ p {
   background-color: f2cc8f;
   color: rgb(2, 84, 109);
 }
-.child {
+.box {
   background-color: f2cc8f;
   width: 26%;
   margin-top: 6rem;
@@ -45,38 +46,39 @@ p {
   padding-top: 3rem;
   box-shadow: 1rem 1rem 5rem rgb(0, 62, 98);
   background-repeat: no-repeat;
-  background-size: 300px 225px;
+  background-size: 30rem 22.5rem;
   background-position: center;
+  transition: all 0.2s;
 }
-#child-1 {
+#box-1 {
   background-image: url(img/cucumbers.jpg);
 }
-#child-2 {
+#box-2 {
   background-image: url(img/broccoli.png);
 }
-#child-3 {
+#box-3 {
   background-image: url(img/taro.jfif);
 }
-#child-4 {
+#box-4 {
   background-image: url(img/lettuce.jpg);
 }
-#child-5 {
+#box-5 {
   background-image: url(img/tomato.jpg);
 }
-#child-6 {
+#box-6 {
   background-image: url(img/onions.jpg);
 }
-#child-7 {
+#box-7 {
   background-image: url(img/cabbage.jfif);
 }
-#child-8 {
+#box-8 {
   background-image: url(img/potato.jfif);
 }
-#child-9 {
+#box-9 {
   background-image: url(img/celery.jpg);
 }
-.child:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+.box:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
