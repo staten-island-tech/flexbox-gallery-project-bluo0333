@@ -6,13 +6,15 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
   gap: 4rem;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: none;
+  background-color: f4f1de;
 }
 @keyframes fadeInAnimation {
   0% {
-    opacity: 0;
+    background-color: f4f1de;
+    opacity: 0.25;
   }
   100% {
     opacity: 1;
@@ -27,11 +29,19 @@ body,
   gap: 6rem;
 }
 h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
   font-size: 7rem;
   font-family: "Montserrat", sans-serif;
   color: rgb(2, 84, 109);
   text-align: center;
-  background-color: f4f1de;
+  background-color: f2cc8f;
+  border: 1.7rem solid rgb(0, 87, 114);
+  border-radius: 1.5rem;
+  width: 26%;
+  box-shadow: solid rgb(0, 87, 114);
 }
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -61,6 +71,7 @@ p {
   background-position: center;
   transition: all 0.2s;
 }
+
 #box-1 {
   background-image: url(img/cucumbers.jpg);
 }
@@ -88,8 +99,35 @@ p {
 #box-9 {
   background-image: url(img/celery.jpg);
 }
-.box:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
+#h1 {
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgb(0, 87, 114);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 4px rgb(0, 87, 114);
+  }
+
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgb(0, 87, 114);
+  }
+}
+#box-1:hover {
+  transform: rotateY(35deg);
+}
+#box-2:hover {
   transform: scale(1.1);
+}
+#box-3:hover {
+  transform: scale(0.9);
+}
+#box-4:hover {
+  transform: rotateX(25deg);
 }
