@@ -20,6 +20,12 @@ body,
     opacity: 1;
   }
 }
+@media screen and (max-width: 1080px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .gallery {
   background-color: f4f1de;
   justify-content: space-evenly;
