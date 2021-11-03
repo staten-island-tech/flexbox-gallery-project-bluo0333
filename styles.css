@@ -5,7 +5,6 @@ body,
   margin: 0%;
   box-sizing: border-box;
   font-size: 62.5%;
-  gap: 4rem;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: none;
